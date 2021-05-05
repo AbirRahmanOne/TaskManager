@@ -22,6 +22,10 @@ if(port == null || port == ""){
 // endpoint 
 app.use('/task', taskRouters);
 
+app.get('/',(req,res)=>{
+    res.send('Task Manager Api Endpoint');
+})
+
 
 app.listen(port, ()=>{
     console.log(`Task Manager app listening at http://localhost:${port}`)

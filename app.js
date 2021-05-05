@@ -14,8 +14,8 @@ connectDB() ;
 app.use(express.json()) ;
 
 
-let port = process.env.port ; 
-if(port !== '3000' || port === ''){
+let port = process.env.PORT ; 
+if(port == null || port == ""){
     port = 8000;
 }
 

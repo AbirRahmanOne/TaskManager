@@ -9,7 +9,7 @@ const connectDB = async ()=>{
             useCreateIndex: true,
             useUnifiedTopology: true 
         })
-        console.log(`DB connected : ${conn.connection.host}`);
+        //console.log(`DB connected : ${conn.connection.host}`);
 
     } catch (err) {
         console.log(err);
